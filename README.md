@@ -85,16 +85,20 @@ The Cafeteria Ordering System is designed to provide a seamless online ordering 
    git clone https://github.com/yourusername/cafeteria-ordering-system.git
 
 2. Navigate to the project forder
+```bash
 cd cafeteria-ordering
 
 3. Install dependencies
+```bash
 npm install
 
 4. Start the frontend
+```bash
 npm start
 
 5. Start the backend
 **Flask**
+```bash
 python app.py
 
 
