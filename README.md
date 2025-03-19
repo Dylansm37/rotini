@@ -79,7 +79,12 @@ The Cafeteria Ordering System is designed to provide a seamless online ordering 
 3. **Stripe API Key** for payment processing.
 4. **Firebase Firestore** account for authentication and database.
 
-### Installation
+### Installation && Setup
+Prerequisites:
+** Node.js & npm
+** Python (For Flask backend)
+** Firebase account setup
+* Stripe API credentials
 1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/yourusername/cafeteria-ordering-system.git
