@@ -80,12 +80,22 @@ The Cafeteria Ordering System is designed to provide a seamless online ordering 
 4. **Firebase Firestore** account for authentication and database.
 
 ### Installation && Setup
-Prerequisites:
-** Node.js & npm
-** Python (For Flask backend)
-** Firebase account setup
-* Stripe API credentials
 1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/yourusername/cafeteria-ordering-system.git
+
+2. Navigate to the project forder
+cd cafeteria-ordering
+
+3. Install dependencies
+npm install
+
+4. Start the frontend
+npm start
+
+5. Start the backend
+**Flask**
+python app.py
+
+
 
