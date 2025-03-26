@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # rotini
 cpsc 362 group repo
 
