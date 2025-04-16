@@ -1,177 +1,135 @@
-# rotini
-cpsc 362 group repo
+# CPSC 449 E-Commerce Project
 
-# Cafeteria Ordering System
+A full-featured e-commerce application built with React, TypeScript, and Firebase.
 
-## Brief Summary
-The Cafeteria Ordering System is designed to provide a seamless online ordering experience for cafeteria users. It allows users to browse the menu, add items to a shopping cart, process payments securely, and communicate through an integrated messaging system. The goal is to create an efficient and intuitive platform to enhance the cafeteria experience for both customers and staff.
+## Overview
 
----
-
-## Table of Contents
-1. [Features](#features)
-2. [Technical Stack](#technical-stack)
-3. [App Type & Scalability](#app-type--scalability)
-4. [Integration & User Experience](#integration--user-experience)
-5. [Setup Instructions](#setup-instructions)
-6. [Contributors](#contributors)
-7. [License](#license)
-
----
+This project is an e-commerce platform that demonstrates modern web development practices using React 19, TypeScript, and Firebase services for authentication, data storage, and hosting.
 
 ## Features
 
-### Behavioral Functionalities
-- **User-Friendly Interface**: Clean, responsive UI for easy navigation.
-- **Login/Sign up Page**: Users can create an account and log in to access personalized features.
-- **User Home Page**: View previous orders and reorder items.
-- **Admin Page (Optional)**: Admins can manage the menu, update prices, and control inventory.
-- **Menu Browsing**: Categorized menu items for easy selection.
-- **Product Searching**: Search bar to find menu items by keywords.
-- **Individual Product Page**: Add to cart, modify quantities, and select customization (portion size, dietary preferences).
-- **Shopping Cart**: Add/remove items, update quantities, and persist cart items across sessions.
-- **Payment Processing**: Secure payment transactions using the Stripe API.
+- User authentication and account management
+- Product browsing and searching
+- Shopping cart functionality
+- Checkout process
+- Order history tracking
+- Admin dashboard for product management
 
----
+## Prerequisites
 
-## Technical Stack
+- Node.js (v18 or higher)
+- npm or npx
+- Firebase account and CLI tools
 
-### Front-End
-- **Homepage UI**: React.js, HTML, CSS, JavaScript
-- **Search Function**: React or Firebase Firestore
-- **Shopping Cart Management**: React.js with Redux
+## Getting Started
 
-### API
-- **Payment Processing**: Stripe API
-- **Order Management**: Flask or PHP
-- **User Authentication & Database Operations**: Firebase Firestore API
-- **Messaging & AI Features (Optional)**: Google Cloud API
+### Installation
 
-### Back-End
-- **NoSQL Database**: Firebase Firestore (for database & authentication)
-- **SQL Database**: MySQL or Firebase Cloud SQL with MySQL support
-
-### Technologies
-- **Version Control**: GitHub
-- **Project Management**: JIRA, Confluence
-
----
-
-## App Type & Scalability
-- **App Type**: Web Application for the Cafeteria Ordering System.
-- **Scalability**: The system is designed to handle high traffic, capable of managing an entire campus' orders daily.
-
----
-
-## Integration & User Experience
-
-- **Credit System Integration**: Users can deposit money into their account and use it for cafeteria purchases.
-- **Persistent Data Storage**: All user information and balances will be stored securely in the database.
-- **User Experience**: The system aims to provide an intuitive, easy-to-use interface for both customers and cafeteria staff.
-
----
-
-## Setup Instructions
-
-### Prerequisites
-1. **Node.js** and **npm** for running the front-end.
-2. **Python** (for Flask back-end) or **PHP**.
-3. **Stripe API Key** for payment processing.
-4. **Firebase Firestore** account for authentication and database.
-
-### Installation && Setup
-1. Clone the repository to your local machine.
-   ```bash
-   git clone https://github.com/yourusername/cafeteria-ordering-system.git
-
-2. Navigate to the project forder
+1. Clone the repository:
 ```bash
-cd cafeteria-ordering
+git clone <repository-url>
+cd cpsc_449_project
 ```
-3. Install dependencies
+
+2. Install dependencies:
 ```bash
+cd ecommerce_project
 npm install
 ```
-4. Start the frontend
+
+3. Set up your environment variables:
 ```bash
-npm start
+cp .env.example .env
 ```
-5. Start the backend
-**Flask**
+Then edit the `.env` file with your Firebase configuration details.
+
+### Development
+
+To start the development server:
+
 ```bash
-python app.py
+npm run dev
+# or using npx
+npx vite
 ```
 
+This will start the development server at [http://localhost:5173](http://localhost:5173).
 
-=======
-# Getting Started with Create React App
+## Project Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+cpsc_449_project/
+├── ecommerce_project/     # Main application code
+│   ├── dist/              # Build output
+│   ├── public/            # Static assets
+│   ├── src/               # Source code
+│   │   ├── components/    # React components
+│   │   ├── pages/         # Page components
+│   │   ├── hooks/         # Custom React hooks
+│   │   ├── services/      # Firebase and API services
+│   │   └── utils/         # Utility functions
+│   ├── firebase.json      # Firebase configuration
+│   ├── vite.config.ts     # Vite configuration
+│   └── package.json       # Project dependencies
+├── proposal/              # Project proposal documents
+└── src/                   # Additional source code
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the app for production
+- `npm run lint` - Runs ESLint to check for code issues
+- `npm run preview` - Previews the production build locally
+- `npm run seed` - Seeds the database with initial data
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Building for Production
 
-### `npm test`
+To build the application for production:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd ecommerce_project
+npx vite build
+```
 
-### `npm run build`
+### Deploying to Firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To deploy the application to Firebase:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd ecommerce_project
+npx firebase deploy
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application will be accessible at your Firebase hosting URL (e.g., https://cpsc-449-project.web.app).
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend**:
+  - React 19
+  - TypeScript
+  - React Router 7
+  - Vite 6
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Backend**:
+  - Firebase Authentication
+  - Firestore Database
+  - Firebase Hosting
+  - Firebase Storage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Development**:
+  - ESLint
+  - TypeScript
+  - Vite
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+MIT
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> a8a6d59 (Initialize project using Create React App)
+CPSC 449 Team 
