@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './MenuPages.css'; // Import the CSS file
 
-const MenuPage = () => {
+const MenuPages = () => {
   return (
     <div className="menu-page">
       <header className="menu-header">
@@ -37,4 +37,5 @@ const MenuPage = () => {
   );
 };
 
-export default MenuPage;
+export default MenuPages;
+

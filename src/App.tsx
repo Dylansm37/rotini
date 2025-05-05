@@ -13,11 +13,11 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import CartPage from './pages/CartPage/CartPage';
 import Layout from './components/Layout';
 import MenuPages from './pages/MenuPages/MenuPages';
-import CheckOut from './pages/CheckOut/CheckOut'; // Import CheckOut component
-import PaymentPage from './pages/PaymentPage/PaymentPage'; // You'll need this later
+import CheckOut from './pages/CheckOut/CheckOut'; 
+import PaymentPage from './pages/PaymentPage/PaymentPage';
 
 const App = () => {
-  console.log("App component rendered"); // Added console log
+  console.log("App component rendered");
   return (
     <BrowserRouter>
       <Routes>

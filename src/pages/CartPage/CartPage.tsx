@@ -49,7 +49,6 @@ const CartPage = () => {
             <h2>Total: ${total}</h2>
             <div className="cart-buttons">
               <button className="clear-btn">Clear Cart</button>
-              {/* Use Link for navigation */}
               <Link to="/checkout">
                 <button className="checkout-btn">Proceed to Checkout</button>
               </Link>

@@ -11,10 +11,10 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>YourCafeteria</div>
+      <div className={styles.logo}>Rotini Cafeteria</div>
       <ul className={styles.navLinks}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/items">Menu</Link></li>
+        <li><Link to ="/menu">Menu</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/support">Support</Link></li>
       </ul>
