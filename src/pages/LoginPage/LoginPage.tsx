@@ -1,5 +1,5 @@
-import './LoginPage.css';
-
+import "./LoginPage.css";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <div className="login-container">
@@ -23,7 +23,7 @@ const LoginPage = () => {
             <button type="submit">Login</button>
           </form>
           <p className="register-link">
-            Don’t have an account? <a href="#">Register</a>
+            Don’t have an account? <Link to="/register">Register</Link>
           </p>
         </div>
       </div>
