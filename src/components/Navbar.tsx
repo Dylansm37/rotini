@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
       <div className={styles.logo}>YourCafeteria</div>
       <ul className={styles.navLinks}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/items">Items</Link></li>
+        <li><Link to="/items">Menu</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/support">Support</Link></li>
       </ul>

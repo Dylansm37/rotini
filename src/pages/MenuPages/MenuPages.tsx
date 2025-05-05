@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import './MenuPage.css'; // Import the CSS file
+import './MenuPages.css'; // Import the CSS file
 
 const MenuPage = () => {
   return (

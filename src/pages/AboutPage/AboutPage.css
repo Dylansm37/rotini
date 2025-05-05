@@ -1,45 +1,123 @@
 .about-page {
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 60px 30px;
+  max-width: 1000px;
   margin: 0 auto;
-  font-family: sans-serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fdfdfd;
 }
 
 .about-hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease-in;
 }
 
-.about-hero h1 {
-  font-size: 2.8rem;
-  color: #333;
+.about-hero-title {
+  font-size: 3.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
-.about-hero p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.about-content h2 {
-  color: #444;
-  margin-top: 30px;
-}
-
-.about-content p {
+.about-hero-subtitle {
+  font-size: 1.35rem;
   color: #666;
-  font-size: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.9;
 }
 
-.about-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.about-content {
+  margin-bottom: 60px;
+  animation: fadeInUp 0.6s ease;
+}
+
+.about-content-heading {
+  color: #1f2d3d;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.about-content-paragraph {
   color: #555;
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+}
+
+.about-content-list {
+  list-style-type: disc;
+  padding-left: 30px;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.about-content-list li {
+  margin-bottom: 12px;
 }
 
 .about-hours {
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 30px;
+  background-color: #f1f3f4;
+  padding: 35px;
+  border-radius: 14px;
+  margin-top: 60px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.9s ease;
+}
+
+.about-hours-heading {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.about-hours-text {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 40px 20px;
+  }
+
+  .about-hero-title {
+    font-size: 2.6rem;
+  }
+
+  .about-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-content-heading {
+    font-size: 1.9rem;
+  }
+
+  .about-content-paragraph,
+  .about-content-list,
+  .about-hours-text {
+    font-size: 1rem;
+  }
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
