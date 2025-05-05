@@ -1,4 +1,5 @@
 /* App.css */
+<<<<<<< HEAD
 body, html {
   margin: 0;
   padding: 0;
@@ -20,3 +21,78 @@ main {
   flex: 1;
   box-sizing: border-box;
 }
+=======
+/* Global body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Home page styling */
+.home-container {
+  text-align: center;
+}
+
+.featured-items {
+  margin-top: 20px;
+}
+
+.featured-item-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Styling for the Menu and Cart page */
+.menu-container, .cart-container {
+  padding: 20px;
+}
+
+.menu-item, .cart-item {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+>>>>>>> origin/master
