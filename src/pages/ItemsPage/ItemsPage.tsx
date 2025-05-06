@@ -5,25 +5,25 @@ const items = [
     id: 1,
     name: "Chicken Sandwich",
     price: 5.99,
-    image: "/assets/sandwich.jpg",
+    image: "/src/assets/sandwich.jpg",
   },
   {
     id: 2,
     name: "Veggie Wrap",
     price: 4.49,
-    image: "/assets/wrap.jpg",
+    image: "/src/assets/wrap.jpg",
   },
   {
     id: 3,
     name: "Iced Coffee",
     price: 2.49,
-    image: "/assets/coffee.jpg",
+    image: "/src/assets/coffee.jpg",
   },
   {
     id: 4,
     name: "Fruit Salad",
     price: 3.25,
-    image: "/assets/salad.jpg",
+    image: "/src/assets/salad.jpg",
   },
 ];
 

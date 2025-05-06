@@ -14,61 +14,61 @@ const HomePage = () => {
       id: 1,
       name: "Pizza",
       description: "Cheese, Tomato, and Fresh Toppings",
-      image: "/assets/images/pizza.jpg",
+      image: "/src/assets/images/pizza.jpg",
     },
     {
       id: 2,
       name: "Burger",
       description: "Juicy beef patty with all the fixings",
-      image: "/assets/images/burger.jpg",
+      image: "/src/assets/images/burger.jpg",
     },
     {
       id: 3,
       name: "Pasta",
       description: "Classic Italian pasta with marinara sauce",
-      image: "/assets/images/pasta.jpg",
+      image: "/src/assets/images/pasta.jpg",
     },
     {
       id: 4,
       name: "Salad",
       description: "Fresh greens with a variety of vegetables",
-      image: "/assets/images/salad.jpg",
+      image: "/src/assets/images/salad.jpg",
     },
     {
       id: 5,
       name: "Sushi",
       description: "Assorted fresh sushi rolls",
-      image: "/assets/images/sushi.jpg",
+      image: "/src/assets/images/sushi.jpg",
     },
     {
       id: 6,
       name: "Tacos",
       description: "Delicious tacos with your choice of filling",
-      image: "/assets/images/tacos.jpg",
+      image: "/src/assets/images/tacos.jpg",
     },
     {
       id: 7,
       name: "Fried Chicken",
       description: "Crispy and flavorful fried chicken",
-      image: "/assets/images/friedchicken.jpg",
+      image: "/src/assets/images/friedchicken.jpg",
     },
     {
       id: 8,
       name: "Ice Cream",
-      description: "Delicious and creamy ice cream",
-      image: "/assets/images/icecream.jpg",
+      description: "Delicious and creamy ice cream with your choice of flavor",
+      image: "/src/assets/images/icecream.jpg",
     },
     {
         id: 9,
         name: "Coffee",
         description: "Freshly brewed coffee",
-        image: "/assets/images/coffee.jpg"
+        image: "/src/assets/images/coffee.jpg"
     },
     {
         id: 10,
-        name: "Sandwich",
-        description: "Classic sandwich with your choice of fillings",
-        image: "/assets/images/sandwich.jpg"
+        name: "Club Sandwich",
+        description: "Classic sandwich with your choice of ham or turkey plus fixings",
+        image: "/src/assets/images/sandwich.jpg"
     }
   ];
 

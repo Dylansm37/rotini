@@ -8,14 +8,14 @@ const cartItems = [
     name: "Chicken Sandwich",
     price: 5.99,
     quantity: 2,
-    image: "/assets/sandwich.jpg",
+    image: "/src/assets/chickensandwich.jpg",
   },
   {
     id: 2,
     name: "Iced Coffee",
     price: 2.49,
     quantity: 1,
-    image: "/assets/coffee.jpg",
+    image: "/src/assets/coffee.jpg",
   },
 ];
 
