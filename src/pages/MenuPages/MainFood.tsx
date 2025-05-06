@@ -5,27 +5,27 @@ const MainFood = () => {
   const mainFoods = [
     {
       id: 1,
-      name: "Pizza",
-      description: "Cheese, Tomato, and Fresh Toppings",
-      image: "/src/assets/images/pizza.jpg",
-    },
-    {
-      id: 2,
       name: "Burger",
       description: "Juicy beef patty with all the fixings",
       image: "/src/assets/images/burger.jpg",
     },
     {
-      id: 3,
+      id: 2,
       name: "Chicken Sandwich",
       description: "Juicy chicken patty with all the fixings",
       image: "/src/assets/images/chickensandwich.jpg",
     },
     {
-      id: 4,
+      id: 3,
       name: "Club Sandwich",
       description: "Classic sandwich with your choice of ham or turkey plus fixings",
       image: "/src/assets/images/sandwich.jpg",
+    },
+    {
+      id: 4,
+      name: "Fried Chicken",
+      description: "Crispy and flavorful fried chicken",
+      image: "/src/assets/images/friedchicken.jpg",
     },
     {
       id: 5,
@@ -35,9 +35,27 @@ const MainFood = () => {
     },
     {
       id: 6,
-      name: "Fried Chicken",
-      description: "Crispy and flavorful fried chicken",
-      image: "/src/assets/images/friedchicken.jpg",
+      name: "Pizza",
+      description: "Delicious slices with your choice of toppings",
+      image: "/src/assets/images/pizza.jpg",
+    },
+    {
+      id: 7,
+      name: "Salad",
+      description: "Fresh greens with a variety of vegetables",
+      image: "/src/assets/images/salad.jpg",
+    },
+    {
+      id: 8, 
+      name: "Sushi",
+      description: "Assorted fresh sushi rolls",
+      image: "/src/assets/images/sushi.jpg",
+    },
+    {
+      id: 9,
+      name: "Tacos",
+      description: "Delicious tacos with your choice of meat",
+      image: "/src/assets/images/tacos.jpg"
     },
   ];
 

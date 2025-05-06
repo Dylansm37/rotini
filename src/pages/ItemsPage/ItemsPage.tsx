@@ -17,7 +17,7 @@ const items = [
     id: 3,
     name: "Iced Coffee",
     price: 2.49,
-    image: "/src/assets/coffee.jpg",
+    image: "/src/assets/icedcoffee.jpg",
   },
   {
     id: 4,
