@@ -1,6 +1,6 @@
-import "./LoginPage.css";
-import { Link } from "react-router-dom";
-const LoginPage = () => {
+import "./RegisterPage.css";
+
+const RegisterPage = () => {
   return (
     <div className="login-container">
       <div className="login-left">
@@ -9,8 +9,8 @@ const LoginPage = () => {
       </div>
       <div className="login-right">
         <div className="login-card">
-          <h2>Welcome Back</h2>
-          <p className="subtitle">Log in to order your favorite meals</p>
+          <h2>New User</h2>
+          <p className="subtitle">Create Account</p>
           <form className="login-form">
             <label>
               Email
@@ -20,15 +20,12 @@ const LoginPage = () => {
               Password
               <input type="password" placeholder="••••••••" />
             </label>
-            <button type="submit">Login</button>
+            <button type="submit">Create Account</button>
           </form>
-          <p className="register-link">
-            Don’t have an account? <Link to="/register">Register</Link>
-          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
