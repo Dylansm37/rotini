@@ -60,9 +60,9 @@ const HomePage = () => {
     },
     {
         id: 9,
-        name: "Coffee",
+        name: "Iced Coffee",
         description: "Freshly brewed coffee",
-        image: "/src/assets/images/coffee.jpg"
+        image: "/src/assets/images/icedcoffee.jpg"
     },
     {
         id: 10,
